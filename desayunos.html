@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Cocina del bien Comer</title>
+  <link rel="stylesheet" href="Desayunos.css" />
+  <link rel="icon" href="imagenes/logo2.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="contenedor-principal">
+    <a href="inicio.html" class="prev-btn">← Inicio</a>
+
+    <header class="header" style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+      <!-- Logo panda como botón login -->
+      <a href="admin.html">
+        <img src="imagenes/logo.png" alt="Logo Panda" class="logo-panda" style="width: 120px; height: auto; cursor: pointer;" />
+      </a>
+
+      <div class="platillo-dia" style="background-color: #e6f38f; border-radius: 20px; padding: 10px; width: 180px;">
+        <h3>Platillo del día:</h3>
+        <ul>
+          <li>Guisado del día</li>
+          <li>2 guarniciones</li>
+          <li>Agua fresca</li>
+        </ul>
+        <p>precio $115.00</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <img id="menuImage" src="imagenes/desayunos-default.jpg" alt="Imagen subida" style="width: 150px; height: 150px; object-fit: cover; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.2);"/>
+        <div class="subir-imagen" id="uploadSection">
+          <label for="upload" class="upload-label" style="padding: 10px 15px; background-color: #f28c28; color: white; font-weight: bold; border-radius: 8px; cursor: pointer;">
+            Subir imagen
+          </label>
+          <input type="file" id="upload" accept="image/*" style="display: none;" />
+        </div>
+        <button id="deleteBtn" style="display: none; margin-top: 10px; padding: 8px 12px; background-color: #e74c3c; color: white; border: none; border-radius: 6px; cursor: pointer;">
+          Eliminar imagen
+        </button>
+        <button id="logoutBtn" style="display: none; margin-top: 5px; padding: 8px 12px; background-color: #3498db; color: white; border: none; border-radius: 6px; cursor: pointer;">
+          Cerrar sesión
+        </button>
+      </div>
+
+      <div class="platillo-dia" style="background-color: #e6f38f; border-radius: 20px; padding: 10px; width: 180px;">
+        <h3>Platillo del día:</h3>
+        <ul>
+          <li>Guisado del día</li>
+          <li>2 guarniciones</li>
+          <li>Agua fresca</li>
+        </ul>
+        <p>precio $115.00</p>
+      </div>
+
+      <img src="imagenes/promo.jpg" alt="Promo Tacos" class="promo-tacos" style="width: 200px; border-radius: 10px;" />
+    </header>
+
+    <main>
+      <h1 class="titulo">Desayunos</h1>
+
+      <section class="menu-desayunos">
+        <div class="card">
+          <img src="imagenes/chilaquiles.jpeg" alt="Chilaquiles" />
+          <h3>Chilaquiles</h3>
+          <p><strong>Salsas:</strong> Morita, verdes, rojos</p>
+          <ul>
+            <li>Con pollo</li>
+            <li>Con bistec</li>
+            <li>Con huevo</li>
+          </ul>
+          <p>precio $85.00 Extra $30.00</p>
+        </div>
+
+        <div class="card">
+          <img src="imagenes/heuvos.jpeg" alt="Huevos" />
+          <h3>Huevos</h3>
+          <p>Revueltos o estrellados con:</p>
+          <ul>
+            <li>con Jamón</li>
+            <li>con Salchicha</li>
+            <li>con Chorizo</li>
+            <li>con A la mexicana</li>
+            <li>Rancheros Precio $90.00</li>
+            <li>Omelet al gusto Precio $95.00</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <img src="imagenes/enchiladas.jpeg" alt="Enchiladas" />
+          <h3>Enchiladas</h3>
+          <p><strong>Salsas:</strong> Verdes, Entomatadas, Enfrijoladas</p>
+          <ul>
+            <li>Con pollo precio $95.00</li>
+            <li>Con huevo precio $95.00</li>
+            <li>Con bistec precio $110.00</li>
+            <li>Con arrachera precio $125.00</li>
+          </ul>
+        </div>
+      </section>
+
+      <h1 class="titulo">Bebidas</h1>
+      <section class="bebidas">
+        <div class="bebida">Refresco: precio $35.00</div>
+        <div class="bebida">
+          Aguas Frescas
+          <ul>
+            <li>Vaso $30.00</li>
+            <li>Jarra $90.00</li>
+          </ul>
+        </div>
+        <div class="bebida">
+          Café
+          <ul>
+            <li>Americano $35.00</li>
+            <li>De olla $40.00 (refil)</li>
+            <li>Capuchino $60.00</li>
+            <li>Expreso $50.00</li>
+          </ul>
+        </div>
+        <div class="bebida">Té $40.00</div>
+      </section>
+    </main>
+
+    <a href="comidas.html" class="next-btn">comidas →</a>
+  </div>
+<script src="desayunos.js"></script>
+</body>
+</html>
